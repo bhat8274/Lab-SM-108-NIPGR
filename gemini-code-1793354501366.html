@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mathur Lab | NIPGR</title>
+    <style>
+        :root {
+            --primary-color: #2e7d32; /* Deep plant green */
+            --secondary-color: #f4f6f5;
+            --text-color: #333333;
+            --accent-color: #81c784;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: var(--text-color);
+            line-height: 1.6;
+            background-color: #fafafa;
+        }
+
+        header {
+            background: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+        }
+
+        .logo {
+            font-weight: bold;
+            font-size: 1.5rem;
+            color: var(--primary-color);
+        }
+
+        nav a {
+            margin-left: 2rem;
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--primary-color);
+        }
+
+        .hero {
+            background: linear-gradient(rgba(46, 125, 50, 0.8), rgba(46, 125, 50, 0.8)), url('https://images.unsplash.com/photo-1530836369250-ef72a3f5cda8?auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 5rem 2rem;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .btn {
+            background: white;
+            color: var(--primary-color);
+            padding: 0.75rem 1.5rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background: var(--accent-color);
+            color: white;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 3rem auto;
+            padding: 0 2rem;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: var(--primary-color);
+        }
+
+        .pi-card {
+            display: flex;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            overflow: hidden;
+            margin-bottom: 3rem;
+        }
+
+        .pi-img {
+            flex: 1;
+            background: #ddd;
+            min-height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #777;
+        }
+
+        .pi-info {
+            flex: 2;
+            padding: 2.5rem;
+        }
+
+        .pi-info h3 {
+            margin-top: 0;
+            color: var(--primary-color);
+        }
+
+        footer {
+            background: #263238;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 4rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER / NAVIGATION -->
+    <header>
+        <div class="nav-container">
+            <div class="logo">Mathur Lab | NIPGR</div>
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#pi">Principal Investigator</a>
+                <a href="#people">People</a>
+                <a href="#publications">Publications</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+        <h1>Dr. Saloni Mathur Lab</h1>
+        <p>National Institute of Plant Genome Research (NIPGR), New Delhi</p>
+        <p>Exploring plant genomics, molecular biology, and crop improvement.</p>
+        <a href="#publications" class="btn">View Our Research</a>
+    </section>
+
+    <div class="container">
+        
+        <!-- PI PROFILE SECTION -->
+        <section id="pi">
+            <h2 class="section-title">Principal Investigator</h2>
+            <div class="pi-card">
+                <div class="pi-img">
+                    <span>[Dr. Saloni Mathur Photo]</span>
+                </div>
+                <div class="pi-info">
+                    <h3>Dr. Saloni Mathur</h3>
+                    <p><strong>Staff Scientist / Principal Investigator</strong></p>
+                    <p>National Institute of Plant Genome Research (NIPGR)</p>
+                    <p>Dr. Mathur’s research group focuses on understanding complex plant genomic networks, functional genomics, and stress biology to contribute towards sustainable agriculture and crop resilience.</p>
